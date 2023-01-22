@@ -1,6 +1,6 @@
 # TechAcademy
 
-Ejercicios entregados a la fehca de hoy 23/01/2023
+Ejercicios entregados a la fecha de hoy 23/01/2023
 
 1. Modulo 3 - TERMINAL.
 2. Modulo 4 - GIT.
