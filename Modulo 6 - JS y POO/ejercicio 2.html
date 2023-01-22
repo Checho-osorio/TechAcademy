@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+      let inicio = ["unacadena", 3, 9, 1, 10, 500, 18, 10, true, 22, 29, 550];
+
+        console.log( typeof inicio[8]);
+
+      const orderarNumero = (arr) => {
+        for (let i = 0; i < arr.length -1 ; i++) {
+          if (typeof arr[i] !="number") {
+            arr.splice( i, 1 )
+          } else {
+            for (let j = 0; j < arr.length - i - 1; j++) {
+              if (arr[j] > arr[j + 1]) {
+                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+              }
+            }
+          }
+        }
+      };
+
+      try {
+        console.log(" inicio de arreglo: ", inicio);
+
+        orderarNumero(inicio);
+
+        console.log("Arreglo Final: ", inicio);
+      } catch (error) {
+        console.log(` Error; ${e.message}`);
+      }
+    </script>
+  </body>
+</html>
